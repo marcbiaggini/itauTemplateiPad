@@ -1,0 +1,2 @@
+# itauTemplateiPad
+Template for iPad
