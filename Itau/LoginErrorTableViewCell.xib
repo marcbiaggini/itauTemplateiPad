@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bWQ-RY-oPf" customClass="LoginErrorTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bWQ-RY-oPf" id="MdJ-KS-uof">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipaditau-ico_alerta_exclamacao" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-jn-QFk">
+                        <rect key="frame" x="16" y="14" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="9Qq-dd-IGY"/>
+                            <constraint firstAttribute="width" constant="12" id="XHQ-0o-wjy"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouC-3U-6EI">
+                        <rect key="frame" x="34" y="4" width="280" height="25.5"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ouC-3U-6EI" secondAttribute="bottom" constant="10" id="0zc-56-L8b"/>
+                    <constraint firstItem="YFG-jn-QFk" firstAttribute="top" secondItem="MdJ-KS-uof" secondAttribute="topMargin" constant="6" id="4td-uB-OxI"/>
+                    <constraint firstItem="ouC-3U-6EI" firstAttribute="leading" secondItem="YFG-jn-QFk" secondAttribute="trailing" constant="6" id="9eA-NO-LXL"/>
+                    <constraint firstAttribute="trailing" secondItem="ouC-3U-6EI" secondAttribute="trailing" constant="6" id="f9H-90-st5"/>
+                    <constraint firstItem="ouC-3U-6EI" firstAttribute="top" secondItem="MdJ-KS-uof" secondAttribute="top" constant="4" id="oHW-38-ZPM"/>
+                    <constraint firstItem="YFG-jn-QFk" firstAttribute="leading" secondItem="MdJ-KS-uof" secondAttribute="leading" constant="16" id="ozB-lt-LGd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="errorIcon" destination="YFG-jn-QFk" id="C7D-fy-zvI"/>
+                <outlet property="textView" destination="ouC-3U-6EI" id="AWu-gp-38Q"/>
+            </connections>
+            <point key="canvasLocation" x="303" y="177"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ipaditau-ico_alerta_exclamacao" width="12" height="12"/>
+    </resources>
+</document>

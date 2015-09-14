@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagView">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad-bt_seta_direita" translatesAutoresizingMaskIntoConstraints="NO" id="n3h-g8-9PT">
+                    <rect key="frame" x="144" y="17" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="LqL-tV-hKM"/>
+                        <constraint firstAttribute="height" constant="14" id="xc7-wd-pMZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GI-dt-3Pm">
+                    <rect key="frame" x="0.0" y="0.0" width="190" height="48"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2GI-dt-3Pm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D9M-6w-nMl"/>
+                <constraint firstAttribute="trailing" secondItem="2GI-dt-3Pm" secondAttribute="trailing" id="Fpj-lk-cL9"/>
+                <constraint firstAttribute="trailing" secondItem="n3h-g8-9PT" secondAttribute="trailing" constant="32" id="bCg-tk-RjD"/>
+                <constraint firstAttribute="bottom" secondItem="2GI-dt-3Pm" secondAttribute="bottom" id="nLB-up-XOm"/>
+                <constraint firstItem="2GI-dt-3Pm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="szk-qc-6vD"/>
+                <constraint firstAttribute="centerY" secondItem="n3h-g8-9PT" secondAttribute="centerY" id="umT-Vk-wo1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="2GI-dt-3Pm" id="fzy-6Z-W9c"/>
+                <outlet property="imageView" destination="n3h-g8-9PT" id="MgT-fh-4xp"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ipad-bt_seta_direita" width="7" height="12"/>
+    </resources>
+</document>

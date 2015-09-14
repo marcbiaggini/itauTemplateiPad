@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="agency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastAccess" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="accounts" inverseEntity="Profile" syncable="YES"/>
+    </entity>
+    <entity name="Profile" representedClassName="Profile" syncable="YES">
+        <attribute name="cpf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="profile" inverseEntity="Account" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="52" positionY="54" width="128" height="133"/>
+        <element name="Profile" positionX="-153" positionY="-126" width="128" height="118"/>
+    </elements>
+</model>

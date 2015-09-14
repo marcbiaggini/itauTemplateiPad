@@ -1,0 +1,43 @@
+{
+  "name": "SDKiOS",
+  "version": "1.0.2",
+  "summary": "Itaú Mobile iOS SDK",
+  "homepage": "http://10.56.147.16:3003/framework/sdk-ios",
+  "license": "Copyright",
+  "authors": {
+    "Alexandre Garrefa": "alexmrg@gmail.com"
+  },
+  "source": {
+    "git": "git@10.56.147.16:framework/sdk-ios.git",
+    "tag": "1.0.2"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "vendored_frameworks": "SDKiOSCore.framework",
+      "public_header_files": "SDKiOSCore.framework/Headers/*.h",
+      "dependencies": {
+        "AFNetworking": [
+          "~> 2.5"
+        ],
+        "AFNetworkActivityLogger": [
+          "~> 2.0"
+        ],
+        "CocoaLumberjack": [
+          "~> 2.0"
+        ],
+        "libextobjc": [
+          "~> 0.4"
+        ],
+        "Mantle": [
+          "~> 2.0"
+        ]
+      }
+    }
+  ]
+}

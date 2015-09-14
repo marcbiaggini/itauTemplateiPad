@@ -1,0 +1,116 @@
+{
+    "ambiente": {
+        "data": "03/05/2015",
+        "hora": "11:10:00",
+        "cache": "10"
+    },
+    "app_config": {
+        "plataforma": [
+                       {
+                       "nome": "android",
+                       "build_number_atual": "3.0.0",
+                       "url_loja": "https://play.google.com/store/apps/details?id=com.itau.tablet.personnalite",
+                       "versoes": [
+                                   {
+                                   "min": "3.0.0",
+                                   "max": "3.0.0",
+                                   "acao": "A"
+                                   }
+                                   ]
+                       },
+                       {
+                       "nome": "ipad",
+                       "build_number_atual": "1.2.0",
+                       "url_loja": "https://itunes.apple.com/br/app/personnalite/id380515305?mt=8",
+                       "versoes": [
+                                   {
+                                   "min": "0.0.1",
+                                   "max": "0.5.0",
+                                   "acao": "D"
+                                   },
+                                   {
+                                   "min": "0.5.1",
+                                   "max": "0.9.0",
+                                   "acao": "C"
+                                   },
+                                   {
+                                   "min": "0.9.1",
+                                   "max": "1.2.0",
+                                   "acao": "B"
+                                   }
+                                   ]
+                       }
+                       ],
+        "acoes": [
+                  {
+                  "tipo": "A",
+                  "msg": "",
+                  "bloqueio": "N"
+                  },
+                  {
+                  "tipo": "B",
+                  "msg": "Confira a nova versão deste app ;-)",
+                  "bloqueio": "N"
+                  },
+                  {
+                  "tipo": "C",
+                  "msg": "Para sua maior segurança, será necessário atualizar a versão do app.",
+                  "bloqueio": "S"
+                  },
+                  {
+                  "tipo": "D",
+                  "msg": "Atenção, esta versão do aplicativo não está mais disponível, por favor desinstale este app e instale novamente a partir da loja de aplicativos.",
+                  "bloqueio": "S"
+                  }
+                  ],
+        "menu": [
+                 {
+                 "funcionalidade": "NET_PAGAMENTO_APP",
+                 "formulario": "frmPagamento01DigitacaoCodigoBarras",
+                 "webview": "N",
+                 "agenciaspiloto": [
+                                    {
+                                    "agencia": "1001"
+                                    },
+                                    {
+                                    "agencia": "0933"
+                                    },
+                                    {
+                                    "agencia": "3747"
+                                    },
+                                    {
+                                    "agencia": "0367"
+                                    },
+                                    {
+                                    "agencia": "3741"
+                                    },
+                                    {
+                                    "agencia": "1144"
+                                    },
+                                    {
+                                    "agencia": "3797"
+                                    },
+                                    {
+                                    "agencia": "0019"
+                                    },
+                                    {
+                                    "agencia": "6483"
+                                    },
+                                    {
+                                    "agencia": "1000"
+                                    }
+                                    ]
+                 },
+                 {
+                 "funcionalidade": "GUIAIR2015",
+                 "formulario": "frmGuiaIR",
+                 "webview": "N"
+                 },
+                 {
+                 "funcionalidade": "POPUP_REVIEW",
+                 "formulario": "popIncentivoReview",
+                 "webview": "N"
+                 }
+                 ]
+    }
+}

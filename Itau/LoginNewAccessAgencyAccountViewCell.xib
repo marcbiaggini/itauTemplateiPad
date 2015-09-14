@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="goH-JL-PhW" customClass="LoginNewAccessAgencyAccountViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="goH-JL-PhW" id="ccf-Lt-sDN">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iik-f7-ejM">
+                        <rect key="frame" x="16" y="12" width="136" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="136" id="EFm-1r-yFe"/>
+                            <constraint firstAttribute="height" constant="45" id="uGc-sQ-IRD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-cz-VvV">
+                        <rect key="frame" x="169" y="12" width="151" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="bYN-Wg-Xpa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92549019610000005" green="0.4549019608" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Sha-cz-VvV" firstAttribute="leading" secondItem="iik-f7-ejM" secondAttribute="trailing" constant="17" id="09w-GL-WGx"/>
+                    <constraint firstItem="iik-f7-ejM" firstAttribute="leading" secondItem="ccf-Lt-sDN" secondAttribute="leading" constant="16" id="Ipf-es-LHp"/>
+                    <constraint firstItem="Sha-cz-VvV" firstAttribute="top" secondItem="ccf-Lt-sDN" secondAttribute="top" constant="12" id="JB4-3f-EtB"/>
+                    <constraint firstItem="iik-f7-ejM" firstAttribute="top" secondItem="ccf-Lt-sDN" secondAttribute="top" constant="12" id="ZWV-Ng-sYC"/>
+                    <constraint firstAttribute="trailing" secondItem="Sha-cz-VvV" secondAttribute="trailing" id="eey-2F-DET"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="accountTextFieldWrapperView" destination="Sha-cz-VvV" id="9OA-uI-LYB"/>
+                <outlet property="agencyTextFieldWrapperView" destination="iik-f7-ejM" id="sdI-p6-xmn"/>
+            </connections>
+            <point key="canvasLocation" x="297" y="356"/>
+        </tableViewCell>
+    </objects>
+</document>

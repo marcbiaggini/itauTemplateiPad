@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ws1-Xc-cNj" customClass="LoginOwnerPickerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ws1-Xc-cNj" id="3Oc-pU-jZl">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcl-Er-ZP0">
+                        <rect key="frame" x="8" y="0.0" width="304" height="39"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYG-FJ-c7I">
+                        <rect key="frame" x="0.0" y="38" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JU8-IV-HZX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jYG-FJ-c7I" firstAttribute="leading" secondItem="3Oc-pU-jZl" secondAttribute="leading" id="8jt-CH-abq"/>
+                    <constraint firstAttribute="bottom" secondItem="jYG-FJ-c7I" secondAttribute="bottom" id="ATm-KK-tRS"/>
+                    <constraint firstAttribute="trailing" secondItem="jYG-FJ-c7I" secondAttribute="trailing" id="NHp-ge-4sl"/>
+                    <constraint firstItem="wcl-Er-ZP0" firstAttribute="top" secondItem="3Oc-pU-jZl" secondAttribute="top" id="Ncg-uk-N6B"/>
+                    <constraint firstItem="wcl-Er-ZP0" firstAttribute="leading" secondItem="3Oc-pU-jZl" secondAttribute="leading" constant="8" id="Yua-ah-2rR"/>
+                    <constraint firstAttribute="bottom" secondItem="wcl-Er-ZP0" secondAttribute="bottom" id="ldh-bc-TmC"/>
+                    <constraint firstAttribute="trailing" secondItem="wcl-Er-ZP0" secondAttribute="trailing" constant="8" id="wRl-uD-P5M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="divider" destination="jYG-FJ-c7I" id="ekF-sw-psn"/>
+                <outlet property="label" destination="wcl-Er-ZP0" id="Y1f-ja-2Ui"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="-59"/>
+        </tableViewCell>
+    </objects>
+</document>
